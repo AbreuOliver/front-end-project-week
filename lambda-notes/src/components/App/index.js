@@ -2,9 +2,7 @@ import React, { Component } from "react";
 // import { Link } from "react";
 import { connect } from "react-redux";
 import { getNotes, getNote, addNote, deleteNote } from "../../store/actions";
-
 import "./style.css";
-// import NoteList from "../NoteList";
 
 
 class App extends Component {
@@ -24,18 +22,18 @@ class App extends Component {
     render() {
       return (
         <div className="App">
+        <div>
         {this.props.loading ? (
           <h3>Loading notes...</h3>
         ) : (
           <div className="App-intro">
-            <h1>Here's the notes, ya'll</h1>
             <h2>Your Notes:</h2>
             <ul>
               {this.props.notes.map( (note, index) => {
-                return<li key={index}>
+                return<h2 key={index}>
                     Title: {note.title} <br />
                     Text: {note.textBody} <br />
-                  </li>})}
+                  </h2>})}
             </ul>
           </div>
         )}
