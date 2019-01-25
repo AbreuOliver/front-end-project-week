@@ -6,11 +6,11 @@ h1, h2, h3, h4, h5 {
 .App {
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    width: 980px;
     margin: 20px auto;
     font-family: "Raleway", sans-serif;
-    border: 1px solid #979797;
-    min-height: 600px;
+    min-height: 400px;
+    height: 100%;
 }
 
 
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     width: 75%;
     height: 100%;
-    border: 1.5px solid #acacac;
+    border: 1.25px solid #acacac;
     margin-right: 10px;
     color: #545454;
     text-align: center;
@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     margin-left: 7.5%;
-    font-size: 55px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 
@@ -59,24 +60,3 @@ a {
   text-decoration: none;
 }
 
-button {
-  background: #2bc1c4;
-  height: 40px;
-  width: 200px;
-  color: #ffffff !important;
-  cursor: pointer;
-  border: 1px solid #979797;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #43d3d6;
-}
-
-button a {
-  color: #ffffff;
-}
-
-button a:visited {
-  color: #ffffff;
-}

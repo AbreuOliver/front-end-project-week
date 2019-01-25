@@ -1,10 +1,15 @@
 .sidebar {
-    min-height: 100vh;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 100%;
-    border: 2px solid #acacac;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 245px;
+    border-top: 1.25px solid #acacac;
+    border-bottom: 1.25px solid #acacac;
+    border-left: 1.25px solid #acacac;
     margin-left: 10px;
     color: #545454;
     background: #dddddd;
@@ -21,12 +26,12 @@
     border: solid 2px #acacac;
     background: #48c7cb;
     color: white;
-    height: 70px;
+    height: 50px;
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-bottom: 9%;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -35,3 +40,25 @@
     background: white;
     color: #48c7cb;
 }
+
+/* button {
+    background: #2bc1c4;
+    height: 40px;
+    width: 200px;
+    color: #ffffff !important;
+    cursor: pointer;
+    border: 1px solid #979797;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #43d3d6;
+}
+
+button a {
+    color: #ffffff;
+}
+
+button a:visited {
+    color: #ffffff;
+} */

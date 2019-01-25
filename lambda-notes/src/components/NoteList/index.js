@@ -53,37 +53,25 @@ class NoteList extends React.Component {
     render(){
         return(
             <div className="notelist">
-            {this.props.loading ? (
-                <h3>Loading notes...</h3>
-            ) : (
+                {this.props.loading ? (
+                    <h3>Loading notes...</h3>
+                ) : (
                 <div className="App-intro">
-                <h2>Your Notes:</h2>
-                <ul>
-                    {this.props.notes.map( (note, index) => {
-                    return<h2 key={index}>
-                        Title: {note.title} <br />
-                        Text: {note.textBody} <br />
-                        </h2>})}
-                </ul>
+                    <h2>Your Notes:</h2>
+                    <ul>
+                        {this.props.notes.map( (note, index) => {
+                        return<h2 key={index}>
+                            Title: {note.title} <br />
+                            Text: {note.textBody} <br />
+                            </h2>})}
+                    </ul>
                 </div>
-            )}
-            {this.props.error !== "" ? <h4>{this.props.error}</h4> : null}
+                )}
+                {this.props.error !== "" ? <h4>{this.props.error}</h4> : null}
             </div>
         );
     }
 }
-
-// const mapStateToProps = state => {
-//     return {
-//         notes: state.notes,
-//         title: state.title,
-//         textBody: state.textBody,
-//         error: state.error,
-//         loading: state.loading,
-//     }
-// };
-
-// export default connect(mapStateToProps, { getNotes, addNote } )(NoteList);
 
 const mapStateToProps = state => {
     return {

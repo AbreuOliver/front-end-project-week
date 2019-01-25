@@ -1,5 +1,30 @@
 .notelist {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -48.6px;
+    flex-direction: column;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 75%;
+    height: 100%;
+    border: 1.25px solid #acacac;
+    margin-right: 10px;
+    color: #545454;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.notelist-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 180px;
+    width: 100%;
+}
+
+.notelist-header h2 {
+    /* margin-left: 5%; */
+    font-size: 40px;
+    /* border-left: 2px solid #48c7cb; */
 }

@@ -1,35 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, 
-    // Route, 
-    // Link 
-} from "react-router-dom";
-// import Form from "../Form";
+import { Link } from "react-router-dom";
 import "./style.css"
+
 
 
 const SideBar = props => {
     return (
-        <Router>
-            <div>
-                <div className="sidebar">
-                <h1>
-                    Lambda
-                    <br />
-                    Notes
-                </h1>
-                {/* <Link to="/">
-                    <button className="button view">View Your Notes</button>
-                </Link>
-                <Link to="/notes/add">
-                    <button className="button create">+ Create New Note</button>
-                </Link>
+            <div className="sidebar">
+                <div>
+                    <h1>
+                        Lambda
+                        <br />
+                        Notes
+                    </h1>
                 </div>
-                <Route exact path="/" component={App} />
-                <Route exact path="/notes/add" component={Form} />
-                </div> */}
+                <div>
+                    <Link to="/">
+                        <button className="button view">View Your Notes</button>
+                    </Link>
+                    <Link to="/notes/add">
+                        <button className="button create">+ Create New Note</button>
+                    </Link>
                 </div>
             </div>
-        </Router>
     );
 };
 
