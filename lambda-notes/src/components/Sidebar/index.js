@@ -1,7 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import App from "../App";
-import Form from "../Form";
+import { BrowserRouter as Router, 
+    // Route, 
+    // Link 
+} from "react-router-dom";
+// import Form from "../Form";
 import "./style.css"
 
 
@@ -15,7 +17,7 @@ const SideBar = props => {
                     <br />
                     Notes
                 </h1>
-                <Link to="/">
+                {/* <Link to="/">
                     <button className="button view">View Your Notes</button>
                 </Link>
                 <Link to="/notes/add">
@@ -24,6 +26,8 @@ const SideBar = props => {
                 </div>
                 <Route exact path="/" component={App} />
                 <Route exact path="/notes/add" component={Form} />
+                </div> */}
+                </div>
             </div>
         </Router>
     );
