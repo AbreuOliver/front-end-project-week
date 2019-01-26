@@ -6,7 +6,7 @@ const Form = () => {
         <div className="form-container">
             <div className="newNote-container">
                 <h2>
-                    Create New Note
+                    Create New Note:
                 </h2>
                 <input 
                     className="note-title"

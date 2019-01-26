@@ -6,6 +6,7 @@ import {
     addNote, 
     // deleteNote 
 } from "../../store/actions";
+import Note from "../Note";
 import "./style.css";
 
 class NoteList extends React.Component {
@@ -21,43 +22,15 @@ class NoteList extends React.Component {
     componentDidMount() {
         this.props.getNotes();
     }
-    // constructor(props) {
-    // super(props);
-    //     this.state = {
-    //         tags: [],
-    //         title: "",
-    //         textBody: "",
-    //     }
-    // }   
-
-    // inputHandler = (event) => {
-    //     this.setState({
-    //     [event.target.name]: event.target.value
-    //     })
-    // }
-
-    // submitHandler = (event) => {
-    // event.preventDefault();
-    // this.props.getNotes(this.state);
-    // this.setState({
-    //     notes: [],
-    //     loading: false,
-    //     error: false 
-    //     })
-    // }
-
-    // componentDidMount() {
-    //     this.props.getNotes();
-    // }
 
     render(){
         return(
             <div className="notelist">
                 {this.props.loading ? (
-                    <h3>Loading notes...</h3>
+                    <h3 className="loading-text">Loading Notes...</h3>
                 ) : (
                 <div className="App-intro">
-                    <h2>Your Notes:</h2>
+                    <h2 className="notelist-header">Your Notes:</h2>
                     <ul>
                         {this.props.notes.map((note, index) => {
                             return (
