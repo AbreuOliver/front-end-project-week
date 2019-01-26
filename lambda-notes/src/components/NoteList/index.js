@@ -59,11 +59,14 @@ class NoteList extends React.Component {
                 <div className="App-intro">
                     <h2>Your Notes:</h2>
                     <ul>
-                        {this.props.notes.map( (note, index) => {
-                        return<h2 key={index}>
-                            Title: {note.title} <br />
-                            Text: {note.textBody} <br />
-                            </h2>})}
+                        {this.props.notes.map((note, index) => {
+                            return (
+                            <div key={index}>
+                                <h2> {note.title} </h2>
+                                <p> {note.textBody} </p>
+                            </div>
+                            );
+                        })}
                     </ul>
                 </div>
                 )}

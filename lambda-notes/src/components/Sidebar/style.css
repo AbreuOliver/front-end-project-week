@@ -26,10 +26,10 @@
     border: solid 2px #acacac;
     background: #48c7cb;
     color: white;
-    height: 50px;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    height: 45px;
+    width: 210px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 9%;
     font-size: 17px;
     font-weight: bold;
@@ -40,25 +40,3 @@
     background: white;
     color: #48c7cb;
 }
-
-/* button {
-    background: #2bc1c4;
-    height: 40px;
-    width: 200px;
-    color: #ffffff !important;
-    cursor: pointer;
-    border: 1px solid #979797;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #43d3d6;
-}
-
-button a {
-    color: #ffffff;
-}
-
-button a:visited {
-    color: #ffffff;
-} */
